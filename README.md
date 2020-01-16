@@ -18,7 +18,7 @@ http://34.77.248.238:3000/users
 ## Peering vpc between atlas and GCP project default vpc
 
 - Mongodb connection string saved as secret in cluster  
-   * helm-chart->tenplates->mongourl-secret.yaml.
+   * helm-chart->templates->mongourl-secret.yaml.
    * there are more better option to save credentials such as base64 encode before or vault..  
 
 ## CI/CD
