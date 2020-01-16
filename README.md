@@ -41,7 +41,7 @@
 
 # Notes
 
-- Jenkins and climacell k8s Services defined as LB type just for the fast solution, in real it should be behind one LB with domain and certificates or with other gateway solution.
+- Jenkins and climacell k8s Services defined as LB type just for the fast solution, in real it should be behind LB ( above k8s ngnix controller) with domain and certificates or with other gateway solution.
 
 - DB Secret can be more secure...
 
