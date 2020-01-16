@@ -1,0 +1,14 @@
+datadog:
+  apiKey: f2bdf64365e74609ffa5703896ee2c44
+  site: datadoghq.eu
+  dd_url: https://app.datadoghq.eu
+  confd:
+    http_check.yaml: |-
+      init_config:
+      instances:
+        - name: ClimaCellTest
+          url: http://34.77.248.238:3000/health
+          method: get
+          content_match: 'DB Down'
+          reverse_content_match: true
+          http_response_status_code: 200

@@ -1,0 +1,15 @@
+#USING REST CLIENT VSCODE Extention
+#post
+POST http://34.77.248.238:3000/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "avia2"
+}
+
+
+#get
+GET http://34.77.248.238:3000/users HTTP/1.1
+
+#health
+GET http://34.77.248.238:3000/health HTTP/1.1
