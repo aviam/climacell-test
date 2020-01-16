@@ -1,5 +1,9 @@
 # Climacell-Exercise
 
+# Service url
+  
+http://34.77.248.238:3000/users
+
 ## GKE private cluster
 
 - Attached service account file to connect my private cluster let me know if there is an issue with that.
