@@ -45,6 +45,8 @@
 
 - DB Secret can be more secure...
 
+- Dockerfile should implemented more efficiencly with multi stage build.
+
 - Monitoring with datadog is simple only to illustrate the flow...
 
 - Put everything in same cluster only for the challenge.
