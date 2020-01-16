@@ -12,7 +12,7 @@ http://34.77.248.238:3000/users
 
 - namespaces:
    * stage: for climacell service
-   * datadoc: monitoring http health with data dog agents.
+   * datadog: monitoring http health with datadog agents.
    * cd: for jenkins CI/CD tool.
 
 ## Peering vpc between atlas and GCP project default vpc
@@ -36,7 +36,7 @@ http://34.77.248.238:3000/users
 ## Monitoring
 
 - Installed datadog agent in my cluster with value file: datadog-values.yaml
-  * `helm ugrdae --install -f datadog-values.yaml datadog --namespace datadog`
+  * `helm upgrade --install -f datadog-values.yaml datadog --namespace datadog`
   * defined confd http_check for service health check
   * defined api-key to connect my datadog account
   * defined site and url to europe where my agent deployed in k8s cluster zone.
