@@ -1,6 +1,6 @@
 # Climacell-Exercise
 
-# Service url
+## Service url
   
 http://34.77.248.238:3000/users
 
