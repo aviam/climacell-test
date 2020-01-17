@@ -28,10 +28,11 @@ http://34.77.248.238:3000/users
 - <http://34.76.47.108:8080/>
   * user: climacell
   * password: 1q2w3e4r
-- You can see there devops-challenge jenkins pipeline job which build docker image push it to gcr and and deployed it my private cluster with helm command.
+- You can see there devops-challenge jenkins pipeline job which build docker image push it to gcr and and deployed it my       private cluster with helm command.
   here you can see ***Dockerfile*** and ***Jenkinsfile*** for building and deploying the servive to gcr and gke as well.
 
   * pipeline: build image -> push image to gcr-> helm deploy to gke.
+  * currently defined the job without polling scm configuration but easly can do it and listen to commits in your repo to trigger pipline.
 
 ## Monitoring
 
