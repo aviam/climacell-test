@@ -10,7 +10,7 @@ http://34.77.248.238:3000/users
   * `gcloud auth activate-service-account --key-file climacelltest.json`
   * `gcloud beta container clusters get-credentials climacell-test --region europe-west1 --project inbound-lattice-237414`
 
-- namespaces:
+- Namespaces:
    * stage: for climacell service
    * datadog: monitoring http health with datadog agents.
    * cd: for jenkins CI/CD tool.
@@ -31,8 +31,9 @@ http://34.77.248.238:3000/users
 - You can see there devops-challenge jenkins pipeline job which build docker image push it to gcr and and deployed it my       private cluster with helm command.
   here you can see ***Dockerfile*** and ***Jenkinsfile*** for building and deploying the servive to gcr and gke as well.
 
-  * pipeline: build image -> push image to gcr-> helm deploy to gke.
-  * currently defined the job without polling scm configuration but easly can do it and listen to commits in your repo to trigger pipline.
+  * Pipeline: build image -> push image to gcr-> helm deploy to gke.
+  * Currently defined the job without polling scm configuration but easly can do it and listen to commits in your repo to trigger pipline.
+  * Defined gcp service account for jenkins agents to push images to gcr with Google Container Registry Auth Plugin in jenkins.
 
 ## Monitoring
 
@@ -42,7 +43,7 @@ http://34.77.248.238:3000/users
   * defined api-key to connect my datadog account
   * defined site and url to europe where my agent deployed in k8s cluster zone.
 
-  ** sent you invitaion to https://app.datadoghq.eu/ you can see there sample dashbord based on http_check metric from agent, monitoring http://34.77.248.238:3000/health.
+  ** Sent you invitaion to https://app.datadoghq.eu/ you can see there sample dashbord based on http_check metric from agent, monitoring http://34.77.248.238:3000/health.
 
 # Notes
 
