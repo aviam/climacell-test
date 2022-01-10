@@ -2,7 +2,7 @@
 
 ## Service url
   
-http://34.77.248.238:3000/users
+http://*****:3000/users
 
 ## GKE private cluster
 
